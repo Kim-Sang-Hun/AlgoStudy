@@ -61,9 +61,9 @@ ex. git checkout -b Kim-Sang-Hun/week1
 <br/><br/>
 ### Push   
 
-git add .   
-git commit -m "{주차명} : {플랫폼}[{문제번호}] {문제이름}"
-ex. git commit -m "week1 : Baekjoon[1759] 암호 만들기"
+git add . <br/>
+git commit -m "{주차명} : {플랫폼}[{문제번호}] {문제이름}" <br/>
+ex. git commit -m "week1 : Baekjoon[1759] 암호 만들기" <br/>
 git push origin {본인 브랜치 이름} <br/>
 ex. git push origin Kim-Sang-Hun/week1
 
