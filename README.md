@@ -51,3 +51,6 @@ Pull Request Name : {본인의 깃허브 이름} : [{주차명}]
 Content : 문제명, 시간복잡도, 시간 및 메모리 캡처
 Label : 플랫폼, 언어
 Assignees : 본인
+
+## 참고 자료
+https://blog.encrypted.gg/category/%EA%B0%95%EC%A2%8C/%EC%8B%A4%EC%A0%84%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98
