@@ -51,7 +51,7 @@ ex. git commit -m "week1 : Baekjoon[1759] 암호 만들기"
 Pull request 생성
 Pull Request Name : {본인의 깃허브 이름} : [{주차명}]
 
-Asignee : 본인
+Assignee : 본인
 
 ## 참고 자료
 [바킹독 알고리즘](https://blog.encrypted.gg/category/%EA%B0%95%EC%A2%8C/%EC%8B%A4%EC%A0%84%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98)
