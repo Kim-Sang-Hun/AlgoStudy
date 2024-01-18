@@ -34,23 +34,24 @@ Pull Request 걸어놓고 매터모스트 스터디 채팅방에 요청
 
 
 ## 커밋 규칙
-Repository clone
+
+### Repository clone
 git clone https://github.com/Kim-Sang-Hun/AlgoStudy.git
 
-본인의 Branch 생성
-branch는 주차별로 생성한다.
-git checkout -b {본인의 깃허브 이름}/{주차명}
+### 본인의 Branch 생성
+**branch는 주차별로 생성한다.**   
+git checkout -b {본인의 깃허브 이름}/{주차명}   
 ex. git checkout -b Kim-Sang-Hun/week1
 
-Push
-git add .
-git commit -m "{주차명} : {플랫폼}[{문제번호}] {문제이름}"
-git push origin {생성한 브랜치}
-ex. git commit -m "week1 : Baekjoon[1759] 암호 만들기"
+### Push
+git add .   
+git commit -m "{주차명} : {플랫폼}[{문제번호}] {문제이름}"   
+git push origin {본인의 브랜치명}   
+ex. git commit -m "week1 : Baekjoon[1759] 암호 만들기"   
 
-Pull request 생성
+### Pull request 생성
 Pull Request Name : {본인의 깃허브 이름} : [{주차명}]
-
+   
 Assignee : 본인
 
 ## 참고 자료
