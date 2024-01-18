@@ -19,6 +19,10 @@ Kim-Sang-Hun
 매주 5문제씩 해결합니다.
 문제의 풀이와 코드 작성 의도를 주석을 이용해 읽기 쉽게 잘 설명할 수 있도록 합니다.
 
+### 풀이 저장
+{본인 깃허브 이름} / {주차명} / {플랫폼} / {문제레벨} / [{문제번호}] {문제이름} 형식으로 저장
+ex) Kim-Sang-Hun/week1/Baekjoon/B5/[1000]Hello World!
+
 ### 마감 기한
 매주 금요일 자정까지 5문제를 풀고 커밋합니다.
 
@@ -32,8 +36,7 @@ Pull Request 걸어놓고 매터모스트 스터디 채팅방에 요청
 ## 커밋 규칙
 Repository clone
 git clone https://github.com/Kim-Sang-Hun/AlgoStudy.git
-Repository open
-vscode or IntelliJ
+
 본인의 Branch 생성
 branch는 주차별로 생성한다.
 git checkout -b {본인의 깃허브 이름}/{주차명}
@@ -41,16 +44,14 @@ ex. git checkout -b Kim-Sang-Hun/week1
 
 Push
 git add .
-git commit -m "{주차명} : {플랫폼}[{문제번호}] {문제명}"
+git commit -m "{주차명} : {플랫폼}[{문제번호}] {문제이름}"
 git push origin {생성한 브랜치}
-ex. git commit -m "1week : BOJ[1759] 암호 만들기"
+ex. git commit -m "week1 : Baekjoon[1759] 암호 만들기"
 
 Pull request 생성
 Pull Request Name : {본인의 깃허브 이름} : [{주차명}]
 
-Content : 문제명, 시간복잡도, 시간 및 메모리 캡처
-Label : 플랫폼, 언어
-Assignees : 본인
+Asignee : 본인
 
 ## 참고 자료
-Link : [바킹독 알고리즘](https://blog.encrypted.gg/category/%EA%B0%95%EC%A2%8C/%EC%8B%A4%EC%A0%84%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98)
+[바킹독 알고리즘](https://blog.encrypted.gg/category/%EA%B0%95%EC%A2%8C/%EC%8B%A4%EC%A0%84%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98)
