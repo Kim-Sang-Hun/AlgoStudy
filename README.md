@@ -70,7 +70,7 @@ ex. git push origin Kim-Sang-Hun/week1
 <br/><br/>
 ### Pull request 생성   
 
-Pull Request Name : {본인의 깃허브 이름} : [{주차명}]
+Pull Request Name : {주차명} : {플랫폼}[{문제번호}] {문제이름}
 <br/><br/>
 ### Assignee : 본인   
 <br/><br/>
