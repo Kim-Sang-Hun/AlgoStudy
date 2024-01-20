@@ -11,6 +11,7 @@
 ```
 아래에 자기 깃허브 주소 링크로 넣어 주세요
 ```
+[스터디 노션](https://reminiscent-play-031.notion.site/14-cf59caf3520e4ed3b570e66cd3e5d05c)
 
 ## ⚖️스터디 규칙
 
@@ -75,7 +76,7 @@ Pull Request Name : {주차명} : {플랫폼}[{문제번호}] {문제이름}
 <br/><br/>
 ## 💾참고 자료
 
-[바킹독 알고리즘](https://blog.encrypted.gg/category/%EA%B0%95%EC%A2%8C/%EC%8B%A4%EC%A0%84%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98)
+[교글 CS스터디](https://github.com/gyoogle/tech-interview-for-developer))
 <br/><br/>
 ## 💻 문제
 <details><summary>📎 2월 문제집</summary>
