@@ -82,7 +82,7 @@ Pull Request Name : {주차명} : {플랫폼}[{문제번호}] {문제이름}
 
 |주차|1|2|3|4|5|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**0주차**<br> (01.22 ~ 01.26)|[테트로미노](https://www.acmicpc.net/problem/14500)|[강의실 배정](https://www.acmicpc.net/problem/11000)|[눈 치우기](https://www.acmicpc.net/problem/26215)|[암호생성기](https://swexpertacademy.com/main/code/problem/problemDetail.do?problemLevel=3&contestProbId=AV14uWl6AF0CFAYD&categoryId=AV14uWl6AF0CFAYD&categoryType=CODE&problemTitle=&orderBy=RECOMMEND_COUNT&selectCodeLang=JAVA&select-1=3&pageSize=10&pageIndex=2)|[햄버거 다이어트](https://swexpertacademy.com/main/code/problem/problemDetail.do?problemLevel=3&contestProbId=AWT-lPB6dHUDFAVT&categoryId=AWT-lPB6dHUDFAVT&categoryType=CODE&problemTitle=&orderBy=RECOMMEND_COUNT&selectCodeLang=JAVA&select-1=3&pageSize=10&pageIndex=2)||
+|**0주차**<br> (01.22 ~ 01.26)|[테트로미노](https://www.acmicpc.net/problem/14500)|[강의실 배정](https://www.acmicpc.net/problem/11000)|[눈 치우기](https://www.acmicpc.net/problem/26215)|[암호생성기](https://swexpertacademy.com/main/code/problem/problemDetail.do?problemLevel=3&contestProbId=AV14uWl6AF0CFAYD&categoryId=AV14uWl6AF0CFAYD&categoryType=CODE&problemTitle=&orderBy=RECOMMEND_COUNT&selectCodeLang=JAVA&select-1=3&pageSize=10&pageIndex=2)|
 
 </details>
 
