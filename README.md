@@ -76,6 +76,7 @@ Pull Request Name : {주차명} : {플랫폼}[{문제번호}]{문제이름}
 ## 💾참고 자료
 
 [바킹독 알고리즘](https://blog.encrypted.gg/category/%EA%B0%95%EC%A2%8C/%EC%8B%A4%EC%A0%84%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98)
+[백성욱 알고스터디](https://github.com/SeongukBaek/algoStudy?tab=readme-ov-file)
 <br/><br/>
 ## 💻 문제
 <details><summary>📎 1월 문제집</summary>
