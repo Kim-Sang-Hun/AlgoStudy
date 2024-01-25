@@ -24,8 +24,9 @@
 - 문제의 풀이와 코드 작성 의도를 주석을 이용해 읽기 쉽게 잘 설명할 수 있도록 합니다.
 <br/><br/>
 ### 풀이 저장
-- {본인 깃허브 이름} / {주차명} / {플랫폼} / {문제레벨} / [{문제번호}] {문제이름} 형식으로 저장합니다. <br/> 
-ex) Kim-Sang-Hun/week1/Baekjoon/B5/[1000]Hello World!
+- {주차명} / {문제번호 및 정보} / {본인 이름} / 문제 풀이 파일} 형식으로 저장합니다. <br/>
+- 본인 이름을 가진 폴더 내에 readme.md파일을 생성해 리드미 규칙에 따라 작성합니다.
+ex) week1/[1000]Hello World!/Kim-Sang-Hun/Solution.java
 <br/><br/>
 ### 마감 기한
 - 매주 금요일 자정까지 5문제를 풀고 커밋합니다.
@@ -52,10 +53,9 @@ ex) Kim-Sang-Hun/week1/Baekjoon/B5/[1000]Hello World!
 git clone https://github.com/Kim-Sang-Hun/AlgoStudy.git
 <br/><br/>
 ### 본인의 Branch 생성   
-
-**branch는 주차별로 생성합니다.**   
-git checkout -b {본인의 깃허브 이름}/{주차명}   
-ex. git checkout -b Kim-Sang-Hun/week1
+ 
+git checkout -b {본인의 깃허브 이름} 
+ex. git checkout -b Kim-Sang-Hun
 <br/><br/>
 ### Push   
 
