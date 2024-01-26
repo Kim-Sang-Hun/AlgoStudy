@@ -25,6 +25,10 @@ public class Main {
                 queue.add(str);
             }
         }
+        /* 
+        string을 charAt으로 하나하나 꺼내보며 마지막으로 들어간 글자보다 큰 것만 들어가게 합니다.
+        index를 늘려가며 문자열의 길이를 셉니다.
+        */
         for (int i = idx; i < C; i++) {
             String s = list.get(i);
             if (str.charAt(idx) < s.charAt(0)) {
