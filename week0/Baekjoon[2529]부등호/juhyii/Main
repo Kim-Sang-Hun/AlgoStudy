@@ -1,0 +1,83 @@
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class P1 {
+	static int N;
+	static String[] marks;
+
+	static List<String> answers = new ArrayList<String>();
+	static int[] nums = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+
+	public static void input() {
+		Scanner sc = new Scanner(System.in);
+		N = sc.nextInt();
+		marks = new String[N];
+
+		for (int i = 0; i < N; i++) {
+			marks[i] = sc.next();
+		}
+	}
+
+	public static void search(int idx, int now, String result, boolean[] visited) {
+
+		if (result.length() > N || idx > N - 1) {
+			answers.add(result);
+			return;
+		}
+
+		String markNow = marks[idx];
+		if (markNow.equals("<")) {
+			for (int i = 0; i < 10; i++) {
+				if (visited[i] == false && now < i) {
+					visited[i] = true;
+					search(idx + 1, i, result + Integer.toString(i), visited);
+					visited[i] = false;
+				}
+			}
+		}
+
+		if (markNow.equals(">")) {
+			for (int i = 0; i < 10; i++) {
+				if (visited[i] == false && now > i) {
+					visited[i] = true;
+					search(idx + 1, i, result + Integer.toString(i), visited);
+					visited[i] = false;
+				}
+			}
+		}
+		return;
+	}
+
+	public static void main(String[] args) {
+		input();
+
+		boolean[] visited = new boolean[10];
+
+		for (int i = 0; i < 10; i++) {
+			visited[i] = true;
+			search(0, i, Integer.toString(i), visited);
+			visited[i] = false;
+		}
+
+		long answerMax = Long.MIN_VALUE;
+		long answerMin = Long.MAX_VALUE;
+		String answerMaxStr = "";
+		String answerMinStr = "";
+
+		for (String str : answers) {
+			long now = Long.parseLong(str);
+			if (answerMax <= now) {
+				answerMax = now;
+				answerMaxStr = str;
+			}
+			if (answerMin >= now) {
+				answerMin = now;
+				answerMinStr = str;
+			}
+		}
+
+		System.out.println(answerMaxStr);
+		System.out.println(answerMinStr);
+	}
+}
