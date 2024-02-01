@@ -76,6 +76,7 @@ public class Main {
 	}
 	
 	public static void main(String[] args) throws IOException {
+		//메서드화하여 가독성 향상
 		input();
 		solution();
 	}
