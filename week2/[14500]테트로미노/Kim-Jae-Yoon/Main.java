@@ -14,14 +14,6 @@ public class Main {
 	static final int[] dy = {1,0,-1,0};
 	
 	/*
-	 * @param n, m 	 -> 종이의 가로, 세로 크기
-	 * @param answer -> 테트로미노 칸의 최댓값
-	 * @param a 	 -> 초기값 입력
-	 * @param vis	 -> 탐색 시 방문 여부 확인을 위한 배열
-	 * @param dx, dy -> 4방향에 대한 고정 입력값
-	 */
-	
-	/*
 	 * name: rec method
 	 * 해당 함수는 문제의 방향성과는 조금 다르게 해석되어있을 수도 있음을 참고하시기 바랍니다.
 	 * 5가지의 도형을 통해 갈 수 있는 모든 경로를 생각해하면,
