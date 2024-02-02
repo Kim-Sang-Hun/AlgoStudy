@@ -1,0 +1,52 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.ArrayDeque;
+import java.util.Deque;
+import java.util.StringTokenizer;
+
+public class SWEA1225 {
+	static Deque<Integer> deque;
+
+	public static void main(String[] args) throws NumberFormatException, IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+		for (int testCase = 1; testCase <= 10; testCase++) {
+			// 입력 , 초기화
+			br.readLine();
+			StringTokenizer st = new StringTokenizer(br.readLine());
+			deque = new ArrayDeque<>();
+
+			int minNum = Integer.MAX_VALUE;
+			for (int i = 0; i < 8; i++) {
+				deque.add(Integer.parseInt(st.nextToken()));
+				minNum = Math.min(minNum, deque.getLast());
+			}
+
+			// 사이클 5회 당 모든 요소가 15씩 줄어든다. 가장 작은 값이 0보다 작거나 같지 않을 만큼(divide) 15로 나눈다.
+			int divide = minNum / 15 - 1;
+			for (int j = 0; j < 8; j++) {
+				deque.addLast(deque.removeFirst() % (divide * 15));
+			}
+
+			// 연산 수행
+			int i = 1;
+			while (deque.getLast() > 0) {
+				deque.addLast(deque.removeFirst() - i);
+				if (i == 5) { i = 1;}
+				else { i++;}
+			}
+
+			// 마지막 값은 0보다 작은 상태로 끝날 수 있으므로 모두 0으로 바꿔준다.
+			deque.removeLast();
+			deque.addLast(0);
+
+			// 출력
+			System.out.printf("#%d ", testCase);
+			for (int j = 0; j < 8; j++) {
+				System.out.printf("%d ", deque.removeFirst());
+			}
+			System.out.println();
+		}
+	}
+}
