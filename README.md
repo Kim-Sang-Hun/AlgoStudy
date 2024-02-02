@@ -67,7 +67,7 @@ git commit -m "{주차명} : [{문제번호}]{문제이름}/{자기 이름}" <br
 ex. git commit -m "week1 : [1759]암호 만들기/Kim-Sang-Hun" <br/><br/>
 
 git push origin {본인 브랜치 이름} <br/>
-ex. git push origin Kim-Sang-Hun/week1
+ex. git push origin Kim-Sang-Hun
 
 <br/><br/>
 ### Pull request 생성   
