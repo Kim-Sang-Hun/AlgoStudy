@@ -1,0 +1,49 @@
+import java.util.Comparator;
+import java.util.PriorityQueue;
+import java.util.Scanner;
+/*
+ * 눈이 가장 많이 남아있는 두 집부터 치운다.
+ * */
+public class Baekjoon26215 {
+	static int snow[];
+	static PriorityQueue <int []> queue =new PriorityQueue<> (new Comparator<int []>() {
+		@Override
+		public int compare(int[] o1, int[] o2) {
+			return o2[0]-o1[0];
+		}}); // 내림차순, 0번째 값으로 정렬하는 우선순위 큐
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		int N = sc.nextInt();
+		snow = new int[N];
+		for (int i = 0; i < N; i++) { // 우선순위 큐와 배열에 동시에 저장한다.
+			snow[i] = sc.nextInt();
+			queue.add(new int[] {snow[i], i});
+		}
+		
+		int answer = 0;
+		while(queue.size() >= 2) {
+			int idx1 = queue.poll()[1]; // 가장 눈이 많은 집 2개의 인덱스
+			int idx2 = queue.poll()[1];
+			
+			answer += snow[idx2]; // 두 번째로 많은 집 눈만큼 치운다.
+			
+			snow[idx1] -= snow[idx2]; // 첫 번째로 많은 집은 치운 만큼 빼준다.
+			snow[idx2] = 0; // 두 번째로 많은 집은 다 치웠다.
+			queue.add(new int[] {snow[idx1], idx1}); // 눈이 남은 첫 번째 집은 다시 큐에 추가한다.
+		}
+		
+		if(!queue.isEmpty()) { 
+			answer += snow[queue.poll()[1]]; // 반복이 끝나면 큐에 집이 없거나 하나 남으니까 처리해준다.
+		}
+		
+		if(answer > 1440) {
+			System.out.println(-1);
+		}else {
+			System.out.println(answer);
+		}
+	
+	}
+
+}
