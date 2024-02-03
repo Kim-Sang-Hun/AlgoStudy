@@ -1,0 +1,84 @@
+import java.util.Scanner;
+/*
+ * dfs로 완전 탐색, 한붓 그리기가 안 되는 ㅏㅓㅗㅜ모양 케이스는 따로 뺐습니다.
+ * */
+public class Baekjoon14500 {
+    static int N, M;
+    static int[][] map;
+    static boolean[][] visited;
+    static int answer = 0;
+    
+    static void dfs(int r, int c, int depth, int sum) {
+        if (depth == 4) {
+            answer = Math.max(answer, sum);
+            return;
+        }
+
+        int[] dc = {1, -1, 0, 0};
+        int[] dr = {0, 0, 1, -1};
+
+        for (int i = 0; i < 4; i++) {
+            int nc = c + dc[i];
+            int nr = r + dr[i];
+
+            if (nc >= 0 && nc < M && nr >= 0 && nr < N && !visited[nr][nc]) {
+                visited[nr][nc] = true;
+                dfs(nr, nc, depth + 1, sum + map[nr][nc]);
+                visited[nr][nc] = false;
+            }
+        }
+    }
+    
+    static void fuckyouCase(int r, int c) {
+        // ㅏ
+        if (c >= 0 && c + 1 <= M - 1 && r - 1 >= 0 && r + 1 <= N - 1) {
+            int sum = map[r][c] + map[r - 1][c] + map[r + 1][c] + map[r][c + 1];
+            answer = Math.max(answer, sum);
+        }
+
+        // ㅓ
+        if (c - 1 >= 0 && c <= M - 1 && r - 1 >= 0 && r + 1 <= N - 1) {
+            int sum = map[r][c] + map[r - 1][c] + map[r + 1][c] + map[r][c - 1];
+            answer = Math.max(answer, sum);
+        }
+
+        // ㅗ
+        if (c - 1 >= 0 && c + 1 <= M - 1 && r - 1 >= 0 && r <= N - 1) {
+            int sum = map[r][c] + map[r][c - 1] + map[r][c + 1] + map[r - 1][c];
+            answer = Math.max(answer, sum);
+        }
+
+        // ㅜ
+        if (c - 1 >= 0 && c + 1 <= M - 1 && r >= 0 && r + 1 <= N - 1) {
+            int sum = map[r][c] + map[r][c - 1] + map[r][c + 1] + map[r + 1][c];
+            answer = Math.max(answer, sum);
+        }
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        N = sc.nextInt();
+        M = sc.nextInt();
+
+        map = new int[N][M];
+        visited = new boolean[N][M];
+
+        for (int i = 0; i < N; i++) {
+            for (int j = 0; j < M; j++) {
+                map[i][j] = sc.nextInt();
+            }
+        }
+
+        for (int i = 0; i < N; i++) {
+            for (int j = 0; j < M; j++) {
+                visited[i][j] = true;
+                dfs(i, j, 1, map[i][j]);
+                visited[i][j] = false;
+
+                fuckyouCase(i, j);
+            }
+        }
+        System.out.println(answer);
+    }
+}
