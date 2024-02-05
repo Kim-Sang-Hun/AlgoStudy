@@ -25,7 +25,7 @@ public class SWEA1234_비밀번호_최민혁 {
 			
 			/*
 			 * 입력받은 문자열 길이만큼
-			 * stack의 top과 같은 숫자가 나오지 않으면 stack에 push
+			 * stack이 비었거나 stack의 top과 같은 숫자가 나오지 않으면 stack에 push
 			 * stack의 top과 같은 숫자가 나오면 둘 다 제거
 			 * 반복
 			 */
