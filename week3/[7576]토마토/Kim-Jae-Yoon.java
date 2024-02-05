@@ -12,6 +12,7 @@ public class Main {
     static int[][] board, dist;
     static Queue<Point> q = new ArrayDeque<>();
 
+    //dist를 통해 최대 일수를 계산
     static void solution() {
         while (!q.isEmpty()) {
             Point cur = q.poll();
