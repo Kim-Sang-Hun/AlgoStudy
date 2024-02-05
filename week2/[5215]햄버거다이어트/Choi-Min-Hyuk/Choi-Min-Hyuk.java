@@ -2,7 +2,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class SW5215_햄버거다이어트_최민혁 {
+public class SWEA5215_햄버거다이어트_최민혁 {
 	static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 	static final String lineSeperator = System.lineSeparator();
 	static StringTokenizer st;
