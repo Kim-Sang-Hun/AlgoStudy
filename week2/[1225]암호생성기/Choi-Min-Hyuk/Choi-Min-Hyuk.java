@@ -2,7 +2,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class SW1225_암호생성기_최민혁 {
+public class SWEA1225_암호생성기_최민혁 {
 	static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 	static final String lineSeperator = System.lineSeparator();
 	static StringTokenizer st;

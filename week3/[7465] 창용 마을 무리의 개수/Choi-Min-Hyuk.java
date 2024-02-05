@@ -2,7 +2,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class SW7465_창용_마을_무리의_개수_최민혁 {
+public class SWEA7465_창용_마을_무리의_개수_최민혁 {
 	static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 	static StringBuilder sb = new StringBuilder();
 	static String lineSeparator = System.lineSeparator();
