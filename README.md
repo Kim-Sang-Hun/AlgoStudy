@@ -1,4 +1,14 @@
 # Algorithm Study
+## 💻 문제집
+<details><summary>📎 2월 문제집</summary>
+
+|주차|1|2|3|4|5|
+|:---:|:---:|:---:|:---:|:---:|:---:|
+|**1주차**<br> (01.22 ~ 01.27)|[부등호](https://www.acmicpc.net/problem/2529)|[암호 만들기](https://www.acmicpc.net/problem/1759)||
+|**2주차**<br> (01.29 ~ 02.03)|[테트로미노](https://www.acmicpc.net/problem/14500)|[강의실 배정](https://www.acmicpc.net/problem/11000)|[눈 치우기](https://www.acmicpc.net/problem/26215)|[암호생성기](https://swexpertacademy.com/main/code/problem/problemDetail.do?problemLevel=3&contestProbId=AV14uWl6AF0CFAYD&categoryId=AV14uWl6AF0CFAYD&categoryType=CODE&problemTitle=&orderBy=RECOMMEND_COUNT&selectCodeLang=JAVA&select-1=3&pageSize=10&pageIndex=2)|[햄버거 다이어트](https://swexpertacademy.com/main/code/problem/problemDetail.do?problemLevel=3&contestProbId=AWT-lPB6dHUDFAVT&categoryId=AWT-lPB6dHUDFAVT&categoryType=CODE&problemTitle=&orderBy=RECOMMEND_COUNT&selectCodeLang=JAVA&select-1=3&pageSize=10&pageIndex=2)||
+|**3주차**<br> (02.05 ~ 02.09)|[가장 가까운 세사람의 심리적 거리](https://www.acmicpc.net/problem/20529)|[토마토](https://www.acmicpc.net/problem/7576)|[벽 부수고 이동하기](https://www.acmicpc.net/problem/2206)|[비밀번호](https://swexpertacademy.com/main/code/problem/problemDetail.do?problemLevel=3&contestProbId=AV14_DEKAJcCFAYD&categoryId=AV14_DEKAJcCFAYD&categoryType=CODE&problemTitle=&orderBy=RECOMMEND_COUNT&selectCodeLang=JAVA&select-1=3&pageSize=10&pageIndex=3)|[창용 마을 무리의 개수](https://swexpertacademy.com/main/code/problem/problemDetail.do?problemLevel=4&contestProbId=AWngfZVa9XwDFAQU&categoryId=AWngfZVa9XwDFAQU&categoryType=CODE&problemTitle=&orderBy=PASS_RATE&selectCodeLang=JAVA&select-1=4&pageSize=10&pageIndex=4&&&&&&&&&&)|
+</details>
+<br/><br/>
 
 ## 📋목표
 1. Java 기반으로 알고리즘 문제를 푸는 데 익숙해집니다.
@@ -85,15 +95,4 @@ Pull Request Name : {주차명} : {플랫폼}[{문제번호}]{문제이름}
 
 [바킹독 알고리즘](https://blog.encrypted.gg/category/%EA%B0%95%EC%A2%8C/%EC%8B%A4%EC%A0%84%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98)
 [백성욱 알고스터디](https://github.com/SeongukBaek/algoStudy?tab=readme-ov-file)
-<br/><br/>
-## 💻 문제
-<details><summary>📎 2월 문제집</summary>
-
-|주차|1|2|3|4|5|
-|:---:|:---:|:---:|:---:|:---:|:---:|
-|**1주차**<br> (01.22 ~ 01.27)|[부등호](https://www.acmicpc.net/problem/2529)|[암호 만들기](https://www.acmicpc.net/problem/1759)||
-|**2주차**<br> (01.29 ~ 02.03)|[테트로미노](https://www.acmicpc.net/problem/14500)|[강의실 배정](https://www.acmicpc.net/problem/11000)|[눈 치우기](https://www.acmicpc.net/problem/26215)|[암호생성기](https://swexpertacademy.com/main/code/problem/problemDetail.do?problemLevel=3&contestProbId=AV14uWl6AF0CFAYD&categoryId=AV14uWl6AF0CFAYD&categoryType=CODE&problemTitle=&orderBy=RECOMMEND_COUNT&selectCodeLang=JAVA&select-1=3&pageSize=10&pageIndex=2)|[햄버거 다이어트](https://swexpertacademy.com/main/code/problem/problemDetail.do?problemLevel=3&contestProbId=AWT-lPB6dHUDFAVT&categoryId=AWT-lPB6dHUDFAVT&categoryType=CODE&problemTitle=&orderBy=RECOMMEND_COUNT&selectCodeLang=JAVA&select-1=3&pageSize=10&pageIndex=2)||
-|**3주차**<br> (02.05 ~ 02.09)|[가장 가까운 세사람의 심리적 거리](https://www.acmicpc.net/problem/20529)|[토마토](https://www.acmicpc.net/problem/7576)|[벽 부수고 이동하기](https://www.acmicpc.net/problem/2206)|[비밀번호](https://swexpertacademy.com/main/code/problem/problemDetail.do?problemLevel=3&contestProbId=AV14_DEKAJcCFAYD&categoryId=AV14_DEKAJcCFAYD&categoryType=CODE&problemTitle=&orderBy=RECOMMEND_COUNT&selectCodeLang=JAVA&select-1=3&pageSize=10&pageIndex=3)|[창용 마을 무리의 개수](https://swexpertacademy.com/main/code/problem/problemDetail.do?problemLevel=4&contestProbId=AWngfZVa9XwDFAQU&categoryId=AWngfZVa9XwDFAQU&categoryType=CODE&problemTitle=&orderBy=PASS_RATE&selectCodeLang=JAVA&select-1=4&pageSize=10&pageIndex=4&&&&&&&&&&)|
-
-<br/><br/><br/><br/><br/><br/>
-
+<br/><br/><br/><br/><br/><br/><br/><br/>
