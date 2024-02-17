@@ -58,7 +58,6 @@ public class boj_17406 {
 		}
 		for(int i=0; i<K; i++) {
 			if(isVisit[i]) continue;	// 이미 수행한 연산이면 continue
-			// 가지치기 필요
 			isVisit[i] = true;
 			int[][] nextArr = rotateArr(curArr, rcs[i][0], rcs[i][1], rcs[i][2]);
 			perm(nextArr, depth+1);
