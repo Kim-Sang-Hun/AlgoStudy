@@ -10,7 +10,7 @@ import java.util.*;
  * 요약
  * 입력받은 문자열에서 주어진 폭발 문자열이 더이상 존재하지 않을 떄까지 삭제
  * 풀이
- * 문자열 탐색. 폭발 문자열에 마지막 글자와 동일할 때 이전에 글자들을 탐색하여 폭발 문자열인지 확인
+ * 문자열 탐색. 현재 문자가 폭발 문자열의 마지막 문자와 동일할 때, 폭발 문자열인지 확인
  */
 public class boj_9935 {
 	static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
