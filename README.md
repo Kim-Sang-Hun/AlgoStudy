@@ -1,6 +1,6 @@
 # Algorithm Study
 ## 💻 문제집
-<details><summary>📎 2월 문제집</summary>
+<details open><summary>📎 2월 문제집</summary>
 
 |주차|1|2|3|4|5|
 |:---:|:---:|:---:|:---:|:---:|:---:|
@@ -8,6 +8,7 @@
 |**2주차**<br> (01.29 ~ 02.03)|[테트로미노](https://www.acmicpc.net/problem/14500)|[강의실 배정](https://www.acmicpc.net/problem/11000)|[눈 치우기](https://www.acmicpc.net/problem/26215)|[암호생성기](https://swexpertacademy.com/main/code/problem/problemDetail.do?problemLevel=3&contestProbId=AV14uWl6AF0CFAYD&categoryId=AV14uWl6AF0CFAYD&categoryType=CODE&problemTitle=&orderBy=RECOMMEND_COUNT&selectCodeLang=JAVA&select-1=3&pageSize=10&pageIndex=2)|[햄버거 다이어트](https://swexpertacademy.com/main/code/problem/problemDetail.do?problemLevel=3&contestProbId=AWT-lPB6dHUDFAVT&categoryId=AWT-lPB6dHUDFAVT&categoryType=CODE&problemTitle=&orderBy=RECOMMEND_COUNT&selectCodeLang=JAVA&select-1=3&pageSize=10&pageIndex=2)||
 |**3주차**<br> (02.05 ~ 02.09)|[가장 가까운 세사람의 심리적 거리](https://www.acmicpc.net/problem/20529)|[토마토](https://www.acmicpc.net/problem/7576)|[벽 부수고 이동하기](https://www.acmicpc.net/problem/2206)|[비밀번호](https://swexpertacademy.com/main/code/problem/problemDetail.do?problemLevel=3&contestProbId=AV14_DEKAJcCFAYD&categoryId=AV14_DEKAJcCFAYD&categoryType=CODE&problemTitle=&orderBy=RECOMMEND_COUNT&selectCodeLang=JAVA&select-1=3&pageSize=10&pageIndex=3)|[창용 마을 무리의 개수](https://swexpertacademy.com/main/code/problem/problemDetail.do?problemLevel=4&contestProbId=AWngfZVa9XwDFAQU&categoryId=AWngfZVa9XwDFAQU&categoryType=CODE&problemTitle=&orderBy=PASS_RATE&selectCodeLang=JAVA&select-1=4&pageSize=10&pageIndex=4&&&&&&&&&&)|
 |**4주차**<br> (02.12 ~ 02.16)|[문자열 폭발](https://www.acmicpc.net/problem/9935)|[고냥이](https://www.acmicpc.net/problem/16472)|[가능한 시험 점수](https://swexpertacademy.com/main/code/problem/problemDetail.do?problemLevel=4&contestProbId=AWHPkqBqAEsDFAUn&categoryId=AWHPkqBqAEsDFAUn&categoryType=CODE&problemTitle=&orderBy=RECOMMEND_COUNT&selectCodeLang=JAVA&select-1=4&pageSize=10&pageIndex=1&&&&&&&&&&)|[배열돌리기4](https://www.acmicpc.net/problem/17406)|[파이프 옮기기 1](https://www.acmicpc.net/problem/17070)|
+|**5주차**<br> (02.19 ~ 02.23)|[연구소](https://www.acmicpc.net/problem/14502)|[가스관](https://www.acmicpc.net/problem/2931)|[계란으로 계란치기](https://www.acmicpc.net/problem/16987)|[2048 (Easy)](https://www.acmicpc.net/problem/12100)|[소문난 칠공주](https://www.acmicpc.net/problem/1941)||
 </details>
 <br/><br/>
 
