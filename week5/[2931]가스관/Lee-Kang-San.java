@@ -27,13 +27,13 @@ public class boj_2931 {
 	static StringTokenizer st;
 	static StringBuilder sb = new StringBuilder();
 	static final Pipe[] pipe = new Pipe[]{new Pipe(0, false, false, false, false), 	// 사용x
-											new Pipe(1, false, true, false, true),	// ┌
-											new Pipe(2, true, false, false, true),	// └
-											new Pipe(3, true, false, true, false),	// ┘
-											new Pipe(4, false, true, true, false),	// ┐
-											new Pipe(5, true, true, false, false),	// |
-											new Pipe(6, false, false, true, true),	// -
-											new Pipe(7, true, true, true, true)};	// +				
+						new Pipe(1, false, true, false, true),	// ┌
+						new Pipe(2, true, false, false, true),	// └
+						new Pipe(3, true, false, true, false),	// ┘
+						new Pipe(4, false, true, true, false),	// ┐
+						new Pipe(5, true, true, false, false),	// |
+						new Pipe(6, false, false, true, true),	// -
+						new Pipe(7, true, true, true, true)};	// +				
 	static int R, C; // 지도 크기 R*C
 	static int[][] eu; // 유럽!
 	static ArrayList<Point> city = new ArrayList<>();
@@ -73,7 +73,7 @@ public class boj_2931 {
 			if(!isIn(ny ,nx)) continue; // 범위 외 제거
 			if(1 <= eu[ny][nx] && eu[ny][nx] <=7) {	// 파이프 일 때
 					if(d == 0 && pipe[eu[ny][nx]].down==true)	eu[p1.y][p1.x] = 5; // 도시 기준 파이프 위치와 가스방향(도시쪽인지) 확인
-					if(d == 1 && pipe[eu[ny][nx]].up==true)	eu[p1.y][p1.x] = 5;
+					if(d == 1 && pipe[eu[ny][nx]].up==true)		eu[p1.y][p1.x] = 5;
 					if(d == 2 && pipe[eu[ny][nx]].right==true)	eu[p1.y][p1.x] = 6;
 					if(d == 3 && pipe[eu[ny][nx]].left==true)	eu[p1.y][p1.x] = 6;
 			}
@@ -86,7 +86,7 @@ public class boj_2931 {
 			if(!isIn(ny ,nx)) continue; // 범위 외 제거
 			if(1 <= eu[ny][nx] && eu[ny][nx] <=7) {	// 파이프 일 때
 					if(d == 0 && pipe[eu[ny][nx]].down==true)	eu[p2.y][p2.x] = 5; // 도시 기준 파이프 위치와 가스방향(도시쪽인지) 확인
-					if(d == 1 && pipe[eu[ny][nx]].up==true)	eu[p2.y][p2.x] = 5;
+					if(d == 1 && pipe[eu[ny][nx]].up==true)		eu[p2.y][p2.x] = 5;
 					if(d == 2 && pipe[eu[ny][nx]].right==true)	eu[p2.y][p2.x] = 6;
 					if(d == 3 && pipe[eu[ny][nx]].left==true)	eu[p2.y][p2.x] = 6;
 			}
