@@ -28,7 +28,7 @@
 이강산 <br/>
 최민혁 <br/><br/>
 
-[스터디 노션](https://reminiscent-play-031.notion.site/14-cf59caf3520e4ed3b570e66cd3e5d05c)
+[스터디 노션](https://www.notion.so/a68123ff76534c5c9915dd62d7cdc0f4#479187049c3d4a20a5f243b3cd1a6dc1)
 
 ## ⚖️스터디 규칙
 
