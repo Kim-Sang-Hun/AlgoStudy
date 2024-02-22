@@ -1,7 +1,7 @@
 import java.util.*;
 import java.io.*;
 
-public class Main {
+public class isayaksh {
 
     private static final int N = 5;
     private static final int[] dx = {0, 1, 0, -1};
