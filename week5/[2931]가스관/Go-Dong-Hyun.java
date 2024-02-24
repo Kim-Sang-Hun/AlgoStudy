@@ -16,6 +16,8 @@ public class BOJ2931 {
 	static boolean flag;
 
 	public static void main(String[] args) throws Exception {
+
+		//일단 틀렸는데.. 낼게요.. 지송..
 		
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st = new StringTokenizer(br.readLine());
