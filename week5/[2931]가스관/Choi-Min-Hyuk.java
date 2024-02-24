@@ -21,11 +21,6 @@ public class BOJ2931_가스관_최민혁 {
 			this.row = row;
 			this.col = col;
 		}
-
-		public void init(int row, int col) {
-			this.row = row;
-			this.col = col;
-		}
 	}
 
 	public static void main(String[] args) throws Exception {
