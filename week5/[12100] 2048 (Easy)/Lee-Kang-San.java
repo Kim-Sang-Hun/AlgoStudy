@@ -18,14 +18,15 @@ public class boj_12100_ {
 	static StringTokenizer st;
 	static StringBuilder sb = new StringBuilder(); 
 	
-	static int N; // 보드 크기 N*N
+	static int N; // map 크기 N*N
+	static int[][] map;
 	static int maxVal = Integer.MIN_VALUE;
 	static int[] dy = {-1, 1, 0, 0}; //상,하,좌,우
 	static int[] dx = {0, 0, -1, 1};	
 	public static void main(String[] args) throws IOException {
 		// 입력
 		N = Integer.parseInt(br.readLine());
-		int[][] map = new int[N][N];
+		map = new int[N][N];
 		for(int i=0;i<N;i++) {
 			st = new StringTokenizer(br.readLine());
 			for(int j=0 ; j<N ; j++) {
