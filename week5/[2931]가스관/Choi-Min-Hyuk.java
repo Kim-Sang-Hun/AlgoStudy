@@ -64,25 +64,31 @@ public class BOJ2931_가스관_최민혁 {
 		if (checkRightPoint(rightPoint.row, rightPoint.col))
 			connectable[RIGHT] = true;
 		
-		// 모든 경우 체크
+		// 다 연결할 수 있으면 +
 		if (connectable[TOP] && connectable[BOTTOM] && connectable[LEFT] && connectable[RIGHT])
 			sb.append(row + 1).append(" ").append(col + 1).append("+");
 		
+		// 위쪽이랑 아래쪽이랑 연결 가능하면 |
 		else if (connectable[TOP] && connectable[BOTTOM] && !connectable[LEFT] && !connectable[RIGHT])
 			sb.append(row + 1).append(" ").append(col + 1).append("|");
-		
+
+		// 위쪽이랑 왼쪽이랑 연결 가능하면 3 (ㅢ 모양)
 		else if (connectable[TOP] && !connectable[BOTTOM] && connectable[LEFT] && !connectable[RIGHT])
 			sb.append(row + 1).append(" ").append(col + 1).append("3");
-		
+
+		// 위쪽이랑 오른쪽이랑 연결 가능하면 2 (ㄴ 모양)
 		else if (connectable[TOP] && !connectable[BOTTOM] && !connectable[LEFT] && connectable[RIGHT])
 			sb.append(row + 1).append(" ").append(col + 1).append("2");
-		
+
+		// 아래쪽이랑 왼쪽이랑 연결 가능하면 4 (ㄱ 모양)
 		else if (!connectable[TOP] && connectable[BOTTOM] && connectable[LEFT] && !connectable[RIGHT])
 			sb.append(row + 1).append(" ").append(col + 1).append("4");
-		
+
+		// 아래쪽이랑 오른쪽이랑 연결 가능하면 1 (r 모양)
 		else if (!connectable[TOP] && connectable[BOTTOM] && !connectable[LEFT] && connectable[RIGHT])
 			sb.append(row + 1).append(" ").append(col + 1).append("1");
-		
+
+		// 왼쪽이랑 오른쪽이랑 연결 가능하면 -
 		else if (!connectable[TOP] && !connectable[BOTTOM] && connectable[LEFT] && connectable[RIGHT])
 			sb.append(row + 1).append(" ").append(col + 1).append("-");
 		
