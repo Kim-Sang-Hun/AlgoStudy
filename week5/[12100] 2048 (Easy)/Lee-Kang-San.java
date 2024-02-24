@@ -18,11 +18,10 @@ public class boj_12100_ {
 	static StringTokenizer st;
 	static StringBuilder sb = new StringBuilder(); 
 	
-	static int N; // map 크기 N*N
+	static int N; // 게임판 크기 N*N
 	static int[][] map;
 	static int maxVal = Integer.MIN_VALUE;
-	static int[] dy = {-1, 1, 0, 0}; //상,하,좌,우
-	static int[] dx = {0, 0, -1, 1};	
+	static int[] d = {-1, 1, -1, 1}; //상,하,좌,우	
 	public static void main(String[] args) throws IOException {
 		// 입력
 		N = Integer.parseInt(br.readLine());
@@ -56,8 +55,7 @@ public class boj_12100_ {
 				int y = i;
 				boolean check = false;
 				while(y>0) { // 방향
-					x += dx[0]; // 한칸씩 옮기면서 만나는 값 확인
-					y += dy[0];
+					y += d[0]; // 한칸씩 옮기면서 만나는 값 확인
 					if(temp[y][x]==0)	// 0 만나면 계속 진행
 						continue;
 					if(temp[y][x] == map[i][j] && !isMerged[y][x]) {	// 같은 값 만남
@@ -66,8 +64,7 @@ public class boj_12100_ {
 						isMerged[y][x] = true;
 						break;
 					}else {	// 다른 값 만남
-						x -= dx[0];
-						y -= dy[0];
+						y -= d[0];
 						break;
 					}
 				}
@@ -85,8 +82,7 @@ public class boj_12100_ {
 				int y = i;
 				boolean check = false;
 				while(y<N-1) {
-					x += dx[1];
-					y += dy[1];
+					y += d[1];
 					if(temp[y][x]==0)	
 						continue;
 					if(temp[y][x] == map[i][j] && !isMerged[y][x]) {
@@ -95,8 +91,7 @@ public class boj_12100_ {
 						isMerged[y][x] = true;
 						break;
 					}else {
-						x -= dx[1];
-						y -= dy[1];
+						y -= d[1];
 						break;
 					}
 				}
@@ -114,8 +109,7 @@ public class boj_12100_ {
 				int y = i;
 				boolean check = false;
 				while(x>0) {
-					x += dx[2];
-					y += dy[2];
+					x += d[2];
 					if(temp[y][x] == 0)
 						continue;
 					if(temp[y][x] == map[i][j] && !isMerged[y][x]) {
@@ -124,8 +118,7 @@ public class boj_12100_ {
 						check = true;
 						break;
 					}else {
-						x -= dx[2];
-						y -= dy[2];
+						x -= d[2];
 						break;
 					}
 				}
@@ -143,8 +136,7 @@ public class boj_12100_ {
 				int y = i;
 				boolean check = false;
 				while(x<N-1) {
-					x += dx[3];
-					y += dy[3];
+					x += d[3];
 					if(temp[y][x] == 0)
 						continue;
 					if(temp[y][x] == map[i][j] && !isMerged[y][x]) {
@@ -153,8 +145,7 @@ public class boj_12100_ {
 						check = true;
 						break;
 					}else {
-						x -= dx[3];
-						y -= dy[3];
+						x -= d[3];
 						break;
 					}
 
