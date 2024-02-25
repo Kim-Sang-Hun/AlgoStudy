@@ -34,12 +34,12 @@ public class BOJ12100 {
 			check();
 			return;
 		}
-		
+
+		int[][] copyArr = new int[N][N];
+		for (int c = 0; c < N; c++) {
+			copyArr[c] = arr[c].clone();
+		}
 		for (int t = 0; t < 4; t++) {
-			int[][] copyArr = new int[N][N];
-			for (int c = 0; c < N; c++) {
-				copyArr[c] = arr[c].clone();
-			}
 			
 			if (t == 0) {	//위로갈때
 				for (int j = 0; j < N; j++) {	//여기는 더하기
