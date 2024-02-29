@@ -24,10 +24,7 @@ public class Main {
 
     //점인지 확인
     static boolean onPoint(int idx) {
-        if(a[idx][0] == a[idx][6]) {
-            if(a[idx][1] == a[idx][7] || a[idx][3] == a[idx][5]) return true;
-        }
-        if(a[idx][2] == a[idx][4]){
+        if(a[idx][0] == a[idx][6] || a[idx][2] == a[idx][4]) {
             if(a[idx][1] == a[idx][7] || a[idx][3] == a[idx][5]) return true;
         }
         return false;
