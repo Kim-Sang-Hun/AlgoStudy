@@ -3,8 +3,12 @@ import java.io.*;
 
 public class isayaksh {
 
+    private static final int[] dx = {0, 1, 0, -1};
+    private static final int[] dy = {-1, 0, 1, 0};
+
     private static int N;
     private static int[][] graph;
+    private static boolean[][] visited;
 
     public static void main(String[] args) throws IOException {
         
@@ -22,22 +26,24 @@ public class isayaksh {
             }
         }
 
-        int answer = Integer.MAX_VALUE;
+        // int answer = Integer.MAX_VALUE;
 
-        for(int y = 1; y <= N; y++) {
-            for(int x = 1; x <= N; x++) {
-                for(int d1 = 1; d1 < N - 1; d1++) {
-                    for(int d2 = 1; d2 < N - d1; d2++) {
-                        if(isPossible(x, y, d1, d2)) {
-                            System.out.println("[x : " + x + ", y : " + y + ", d1 : " + d1 + ", d2 : " + d2 + "]");
-                            answer = Math.max(answer, seperate(x, y, d1, d2));
-                        }
-                    }
-                }
-            }
-        }
+        // for(int y = 1; y <= N; y++) {
+        //     for(int x = 1; x <= N; x++) {
+        //         for(int d1 = 1; d1 < N - 1; d1++) {
+        //             for(int d2 = 1; d2 < N - d1; d2++) {
+        //                 if(isPossible(x, y, d1, d2)) {
+        //                     System.out.println("[x : " + x + ", y : " + y + ", d1 : " + d1 + ", d2 : " + d2 + "]");
+        //                     answer = Math.min(answer, seperate(x, y, d1, d2));
+        //                 }
+        //             }
+        //         }
+        //     }
+        // }
 
-        System.out.println(answer);
+        // System.out.println(answer);
+
+        seperate(2, 4, 1, 1);
 
     }
 
@@ -47,26 +53,45 @@ public class isayaksh {
 
     private static int seperate(int x, int y, int d1, int d2) {
         int[] population = new int[5];
-        boolean[][] visited = new boolean[N+1][N+1];
+        visited = new boolean[N+1][N+1];
 
-        for(int dx = 0; dx <= d1+d2; dx++) {
+        /*
+         * (x, y), (x+1, y-1), ..., (x+d1, y-d1)
+         * (x, y), (x+1, y+1), ..., (x+d2, y+d2)
+         * (x+d1, y-d1), (x+d1+1, y-d1+1), ... (x+d1+d2, y-d1+d2)
+         * (x+d2, y+d2), (x+d2+1, y+d2-1), ..., (x+d2+d1, y+d2-d1)
+         */
+
+        // 5번 선거구
+        for(int dd1 = 0; dd1 < d1; dd1++) {
+
+            if(!visited[y-dd1][x+dd1]) {
+                visited[y-dd1][x+dd1] = true;
+                population[4] += graph[y-dd1][x+dd1];
+            }
+
+            if(!visited[y+d2-dd1][x+d2+dd1]) {
+                visited[y+d2-dd1][x+d2+dd1] = true;
+                population[4] += graph[y+d2-dd1][x+d2+dd1];
+            }
             
-            if(dx <= (d1+d2)/2) {
-                for(int dy = 0 - dx; dy < dx + 1; dy++) {
-                    visited[y+dy][x+dx] = true;
-                    population[4] += graph[y+dy][x+dx];
-                }
-            }
-
-            if((d1+d2)/2 < dx) {
-                for(int dy = dx - (d1+d2) - 1; dy < (d1+d2) - dx; dy++) {
-                    System.out.println("dy : " + dy +  ", dx : " + dx);
-                    visited[y+dy][x+dx] = true;
-                    population[4] += graph[y+dy][x+dx];
-                }
-            }
-
         }
+        for(int dd2 = 0; dd2 < d2; dd2++) {
+
+            if(!visited[y+dd2][x+dd2]) {
+                visited[y+dd2][x+dd2] = true;
+                population[4] += graph[y+dd2][x+dd2];
+            }
+
+            if(!visited[y-d1+dd2][x+d1+dd2]) {
+                visited[y-d1+dd2][x+d1+dd2] = true;
+                population[4] += graph[y-d1+dd2][x+d1+dd2];
+            }
+        }
+
+        visited[y][x+1] = true;
+        population[4] += dfs(x+1,y);
+
         
         for(int r = 1; r < N+1; r++) {
             for(int c = 1; c < N+1; c++) {
@@ -96,6 +121,8 @@ public class isayaksh {
             }
         }
 
+        System.out.println(Arrays.toString(population));
+
         int max = Integer.MIN_VALUE, min = Integer.MAX_VALUE;
 
         for(int p : population) {
@@ -105,6 +132,23 @@ public class isayaksh {
 
         return max - min;
 
+    }
+
+    private static int dfs(int x, int y) {
+        int value = graph[y][x];
+        int nx, ny;
+        for(int i = 0; i < 4; i++) {
+            nx = x + dx[i];
+            ny = y + dy[i];
+
+            if(nx < 0 || nx >= N || ny < 0 || ny >= N || visited[ny][nx]) continue;
+            visited[ny][nx] = true;
+
+            value = dfs(nx, ny);
+
+        }
+
+        return value;
     }
 
 }
