@@ -1,13 +1,14 @@
 # Algorithm Study
 ## 💻 문제집
-<details><summary>📎 1월 문제집</summary>
+<details><summary>📎1월 문제집</summary>
  
 |주차|1|2|3|4|5|
 |:---:|:---:|:---:|:---:|:---:|:---:|
 |**1주차**<br> (01.22 ~ 01.27)|[부등호](https://www.acmicpc.net/problem/2529)|[암호 만들기](https://www.acmicpc.net/problem/1759)||
 |**2주차**<br> (01.29 ~ 02.03)|[테트로미노](https://www.acmicpc.net/problem/14500)|[강의실 배정](https://www.acmicpc.net/problem/11000)|[눈 치우기](https://www.acmicpc.net/problem/26215)|[암호생성기](https://swexpertacademy.com/main/code/problem/problemDetail.do?problemLevel=3&contestProbId=AV14uWl6AF0CFAYD&categoryId=AV14uWl6AF0CFAYD&categoryType=CODE&problemTitle=&orderBy=RECOMMEND_COUNT&selectCodeLang=JAVA&select-1=3&pageSize=10&pageIndex=2)|[햄버거 다이어트](https://swexpertacademy.com/main/code/problem/problemDetail.do?problemLevel=3&contestProbId=AWT-lPB6dHUDFAVT&categoryId=AWT-lPB6dHUDFAVT&categoryType=CODE&problemTitle=&orderBy=RECOMMEND_COUNT&selectCodeLang=JAVA&select-1=3&pageSize=10&pageIndex=2)||
 </details>
-<details open><summary>📎 2월 문제집</summary>
+
+<details><summary>📎2월 문제집</summary>
 
 |주차|1|2|3|4|5|
 |:---:|:---:|:---:|:---:|:---:|:---:|
@@ -15,6 +16,14 @@
 |**4주차**<br> (02.12 ~ 02.16)|[문자열 폭발](https://www.acmicpc.net/problem/9935)|[고냥이](https://www.acmicpc.net/problem/16472)|[가능한 시험 점수](https://swexpertacademy.com/main/code/problem/problemDetail.do?problemLevel=4&contestProbId=AWHPkqBqAEsDFAUn&categoryId=AWHPkqBqAEsDFAUn&categoryType=CODE&problemTitle=&orderBy=RECOMMEND_COUNT&selectCodeLang=JAVA&select-1=4&pageSize=10&pageIndex=1&&&&&&&&&&)|[배열돌리기4](https://www.acmicpc.net/problem/17406)|[파이프 옮기기 1](https://www.acmicpc.net/problem/17070)|
 |**5주차**<br> (02.19 ~ 02.23)|[연구소](https://www.acmicpc.net/problem/14502)|[가스관](https://www.acmicpc.net/problem/2931)|[계란으로 계란치기](https://www.acmicpc.net/problem/16987)|[2048 (Easy)](https://www.acmicpc.net/problem/12100)|[소문난 칠공주](https://www.acmicpc.net/problem/1941)||
 |**6주차**<br> (02.26 ~ 03.01)|[점프](https://www.acmicpc.net/problem/1890)|[어른 상어](https://www.acmicpc.net/problem/19237)|[동전 1](https://www.acmicpc.net/problem/2293)|[게리맨더링 2](https://www.acmicpc.net/problem/17779)|[직사각형](https://www.acmicpc.net/problem/2527)|
+</details>
+
+<details open><summary>📎3월 문제집</summary>
+ 
+|주차|1|2|3|4|5|
+|:---:|:---:|:---:|:---:|:---:|:---:|
+|**7주차**<br> (03.02 ~ 03.09)|[스티커](https://www.acmicpc.net/problem/9465)|[트리](https://www.acmicpc.net/problem/4803)|[인구 이동](https://www.acmicpc.net/problem/16234)|[뱀](https://www.acmicpc.net/problem/3190)|[회문](https://www.acmicpc.net/problem/17609)|
+ 
 </details>
 <br/><br/>
 
