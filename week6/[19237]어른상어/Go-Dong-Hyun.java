@@ -39,8 +39,8 @@ public class BOJ19237 {
 			st = new StringTokenizer(br.readLine());
 			for (int j = 0; j < N; j++) {
 				arr[i][j][0] = Integer.parseInt(st.nextToken());	//0에는 좌표x,y에다가 rank(번호)저장
-				arr[i][j][1] = K;									//1에는 좌표랑 냄새시간저장
-				arr[i][j][2] = 0;									//2에는 시간저장 ㅅㅂ
+				arr[i][j][1] = K;					//1에는 좌표랑 냄새시간저장
+				arr[i][j][2] = 0;					//2에는 시간저장 
 				if (arr[i][j][0] != 0) {
 					q.add(new int[] {i,j,arr[i][j][0]});	//좌표x,y랑 rank q에 넣음
 				}
