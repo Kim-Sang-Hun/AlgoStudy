@@ -11,6 +11,7 @@ import java.util.*;
  * 주어진 조건에 따라 으른 상어 조작하기
  * 풀이
  * 시뮬레이션
+ * 이동시 4방향에 빈 공간 없으면 왔던 곳으로 돌아가는 게 아니라 자기 냄새 나는 곳 중 우선 순위 높은 곳으로 간다.
  */
 public class boj_19237 {
 	static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -111,8 +112,7 @@ public class boj_19237 {
 //				}
 //				System.out.println();
 //			}
-//			System.out.println("=============");
-			
+//			System.out.println("=============");		
 			
 			// 1. k 1씩 감소
 			for(int i=0; i<N; i++) {
@@ -121,7 +121,7 @@ public class boj_19237 {
 				}
 			}	
 
-			// 3. 상어 다음 이동 계산
+			// 2. 상어 다음 이동 계산
 			for(int i=1; i<=M; i++) {
 				if(shark[i].x==-1) continue;  // 쫒겨난 상어인 지 확인
 				boolean hasBlank=false;
@@ -141,26 +141,21 @@ public class boj_19237 {
 					shark[i].x = nx;
 					shark[i].y = ny;
 				} else { // 빈 공간 없으면 왔던 길 돌아가기
-					if(shark[i].dir==1) { // 상방향이면 
-						shark[i].dir = 2;
-						shark[i].x += dx[2]; 
-						shark[i].y += dy[2];
-					} else if(shark[i].dir==2) { // 하방향이면
-						shark[i].dir = 1;
-						shark[i].x += dx[1]; 
-						shark[i].y += dy[1];
-					} else if(shark[i].dir==3) { // 좌방향이면
-						shark[i].dir = 4;
-						shark[i].x += dx[4]; 
-						shark[i].y += dy[4];
-					} else if(shark[i].dir==4) { // 우방향이면
-						shark[i].dir = 3;
-						shark[i].x += dx[3]; 
-						shark[i].y += dy[3];
-					} 
+					for(int d=0; d<4; d++) {
+						ny = shark[i].y+dy[shark[i].move[shark[i].dir][d]];
+						nx = shark[i].x+dx[shark[i].move[shark[i].dir][d]];
+						ndir = shark[i].move[shark[i].dir][d];
+						if(!isIn(nx, ny)) continue;
+						if(map[ny][nx]==shark[i].num) {
+							break;
+						}
+					}
+					shark[i].dir = ndir;
+					shark[i].x += dx[ndir];
+					shark[i].y += dy[ndir];
 				}
 			}
-			// 4. 상어 이동
+			// 3. 상어 이동
 			for(int i=1; i<=M; i++) {
 				if(shark[i].x!=-1) { // 격자 내 상어 일 때
 					int nx = shark[i].x;
@@ -174,7 +169,7 @@ public class boj_19237 {
 				}
 			}
 			
-			// 2. k=0 인 지점 지우기
+			// 4. k=0 인 지점 지우기
 			for(int i=0; i<N; i++) {
 				for(int j=0; j<N; j++) {
 					if(map[i][j]!=0 && kCnt[i][j]==0) map[i][j]=0;
