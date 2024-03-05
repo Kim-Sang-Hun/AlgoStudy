@@ -1,5 +1,3 @@
-package algo_group_study;
-
 import java.io.*;
 import java.util.*;
 /*
