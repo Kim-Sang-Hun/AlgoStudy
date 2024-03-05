@@ -58,10 +58,9 @@
 ### 풀이 저장
 - {주차명} / {문제번호 및 정보} / {본인 이름}.java} 형식으로 저장합니다. <br/>
 - 풀이 파일 내에 주석으로 풀이에 대해 설명합니다. 못 풀었을 경우에도 올리고 어떤 방식으로 접근했는지 설명합니다. <br/>
-- 풀지 못했고 리뷰가 필요하다면 pull request를 오픈하고 매터모스트에 요청합니다.<br/>
-ex) week1/[1000]Hello World!/Kim-Sang-Hun.java
-
-![image](https://github.com/Kim-Sang-Hun/AlgoStudy/assets/119822465/ed3bff3d-7bbf-41e3-a179-41cf5a90062b)
+ex) week1/[1000]Hello World!/Kim-Sang-Hun.java <br/>
+- 풀지 못했고 리뷰가 필요하다면 pull request를 오픈하고 매터모스트에 요청합니다. <br/><br/>
+![image](https://github.com/Kim-Sang-Hun/AlgoStudy/assets/119822465/96f39940-7c33-492d-9b94-247a6d356b47)
 
 
 <br/><br/>
