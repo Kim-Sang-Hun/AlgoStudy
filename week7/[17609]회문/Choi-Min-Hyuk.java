@@ -19,7 +19,7 @@ public class BOJ17609_회문_최민혁 {
 	}
 	
 	private static int getStringStatus(String s, int start, int end, int status) {
-		// 문자 삭제를 2번 하면 바로 return 2
+	// 문자 삭제를 2번 하면 바로 return 2
         if (status >= 2) {
             return 2;
         }
