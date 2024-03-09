@@ -32,7 +32,7 @@ public class BOJ17609_회문_최민혁 {
                 end--;
             } 
             
-            // 문자가 달라 하나를 삭제해야 하는 경우, 앞을 없앨지 뒤를 없앨지 선택
+            // 문자가 달라 하나를 삭제해야 하는 경우, 앞을 없앨지 뒤를 없앨지 고려하고 더 작은 값 선택
             else
                 return Math.min(getStringStatus(s, start + 1, end, status + 1), getStringStatus(s, start, end - 1, status + 1));
         }
