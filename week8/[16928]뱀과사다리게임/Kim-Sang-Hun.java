@@ -7,7 +7,7 @@ import java.util.LinkedList;
 import java.util.Map;
 import java.util.Queue;
 import java.util.StringTokenizer;
-
+ 
 /*
  * bfs와 dp로 풀어주었다. 뱀과 사다리를 event라는 맵에 넣어주고
  * 해당 인덱스에 도착했을 때 event에 존재하는 값이면 인덱스를 바꿔주었다.
