@@ -23,7 +23,7 @@
 |주차|1|2|3|4|5|
 |:---:|:---:|:---:|:---:|:---:|:---:|
 |**7주차**<br> (03.02 ~ 03.09)|[스티커](https://www.acmicpc.net/problem/9465)|[트리](https://www.acmicpc.net/problem/4803)|[인구 이동](https://www.acmicpc.net/problem/16234)|[뱀](https://www.acmicpc.net/problem/3190)|[회문](https://www.acmicpc.net/problem/17609)|
-|**8주차**<br> (03.16 ~ 03.23)|[정수 삼각형](https://www.acmicpc.net/problem/1932)|[뱀과 사다리 게임](https://www.acmicpc.net/problem/16928)|[트리의 지름](https://www.acmicpc.net/problem/1167)|[미세먼지 안녕!](https://www.acmicpc.net/problem/17144)|[팩맨](https://www.codetree.ai/training-field/frequent-problems/problems/pacman/description?page=1&pageSize=20&username=)
+|**8주차**<br> (03.16 ~ 03.23)|[정수 삼각형](https://www.acmicpc.net/problem/1932)|[뱀과 사다리 게임](https://www.acmicpc.net/problem/16928)|[트리의 지름](https://www.acmicpc.net/problem/1167)|[퍼즐조각 채우기](https://school.programmers.co.kr/learn/courses/30/lessons/84021)|[파괴되지 않은 건물](https://school.programmers.co.kr/learn/courses/30/lessons/92344)
 </details>
 <br/><br/>
 
