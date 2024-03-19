@@ -10,7 +10,7 @@ import java.util.StringTokenizer;
 * 맨 처음과 맨 끝만 다르게 해주고 중간일 경우 왼쪽과 오른쪽 값 중에 큰 값을 선택해서 더해준다.
 */
 public class Main {
-
+ 
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int N = Integer.parseInt(br.readLine());
