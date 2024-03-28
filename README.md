@@ -24,7 +24,7 @@
 |:---:|:---:|:---:|:---:|:---:|:---:|
 |**7주차**<br> (03.02 ~ 03.09)|[스티커](https://www.acmicpc.net/problem/9465)|[트리](https://www.acmicpc.net/problem/4803)|[인구 이동](https://www.acmicpc.net/problem/16234)|[뱀](https://www.acmicpc.net/problem/3190)|[회문](https://www.acmicpc.net/problem/17609)|
 |**8주차**<br> (03.16 ~ 03.23)|[정수 삼각형](https://www.acmicpc.net/problem/1932)|[뱀과 사다리 게임](https://www.acmicpc.net/problem/16928)|[트리의 지름](https://www.acmicpc.net/problem/1167)|[효율적인 해킹](https://www.acmicpc.net/problem/1325)|[파괴되지 않은 건물](https://school.programmers.co.kr/learn/courses/30/lessons/92344)
-|**9주차**<br> (03.24 ~ 03.30)|[루돌프의 반란](https://www.codetree.ai/training-field/frequent-problems/problems/rudolph-rebellion/description?page=1&pageSize=20)|[DSLR](https://www.acmicpc.net/problem/9019)|[트리의 순회](https://www.acmicpc.net/problem/2263)|[웜홀](https://www.acmicpc.net/problem/1865)|[방문 길이](https://school.programmers.co.kr/learn/courses/30/lessons/49994)|
+|**9주차**<br> (03.24 ~ 03.30)|[루돌프의 반란](https://www.codetree.ai/training-field/frequent-problems/problems/rudolph-rebellion/description?page=1&pageSize=20)|[DSLR](https://www.acmicpc.net/problem/9019)|[트리의 순회](https://www.acmicpc.net/problem/1991)|[웜홀](https://www.acmicpc.net/problem/1865)|[방문 길이](https://school.programmers.co.kr/learn/courses/30/lessons/49994)|
 </details>
 <br/><br/>
 
