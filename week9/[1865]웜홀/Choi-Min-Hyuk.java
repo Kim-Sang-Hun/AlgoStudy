@@ -69,7 +69,6 @@ public class BOJ1865_웜홀_최민혁 {
 		Arrays.fill(dist, INF);
 		dist[1] = 0;
 		
-		// 그래프가 어떻게 생겼는지 따져주기 힘들어서 BellmanFord를 지점의 수만큼 반복함
 		for (int start = 1; start <= N; start++) {
 			for (int vertexIndex = 1; vertexIndex <= N; vertexIndex++) {
 				int edgeCount = adjList[vertexIndex].size();
