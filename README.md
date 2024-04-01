@@ -18,7 +18,7 @@
 |**6주차**<br> (02.26 ~ 03.01)|[점프](https://www.acmicpc.net/problem/1890)|[어른 상어](https://www.acmicpc.net/problem/19237)|[동전 1](https://www.acmicpc.net/problem/2293)|[게리맨더링 2](https://www.acmicpc.net/problem/17779)|[직사각형](https://www.acmicpc.net/problem/2527)|
 </details>
 
-<details open><summary>📎3월 문제집</summary>
+<details><summary>📎3월 문제집</summary>
  
 |문제|1|2|3|4|5|
 |:---:|:---:|:---:|:---:|:---:|:---:|
