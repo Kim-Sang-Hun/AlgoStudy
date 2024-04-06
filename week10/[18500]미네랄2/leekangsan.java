@@ -1,4 +1,4 @@
-package notFin;
+package BOJ;
 
 import java.io.*;
 import java.util.*;
@@ -40,8 +40,10 @@ public class boj_18500 {
 	static final int[] di = { -1, 1, 0, 0 }; // 상 하 좌 우
 	static final int[] dj = { 0, 0, -1, 1 };
 
-	static int R, C; // 동굴은 R×C칸으로 이루어져 있다. 각 칸은 비어있거나 미네랄을 포함하고 있으며, 네 방향 중 하나로 인접한 미네랄이 포함된 두 칸은 같은
-						// 클러스터이다.
+	// 동굴은 R×C칸으로 이루어져 있다.
+	// 각 칸은 비어있거나 미네랄을 포함하고 있으며,
+	// 네 방향 중 하나로 인접한 미네랄이 포함된 두 칸은 같은 클러스터이다.
+	static int R, C;
 	static char[][] cave; // 다음 R개 줄에는 C개의 문자가 주어지며, '.'는 빈 칸, 'x'는 미네랄을 나타낸다.
 	static int N; // 다음 줄에는 막대를 던진 횟수 N이 주어진다. (1 ≤ N ≤ 100)
 
@@ -69,12 +71,14 @@ public class boj_18500 {
 				destroyMineral(height, RIGHT);
 			}
 			Pos p = isThereFallingCluster();
-			if (p == null) // 떨어져야 하는 미네랄 없으면 다음 막대기 던지기 하러 감
+
+			// 떨어져야 하는 미네랄 없으면 다음 막대기 던지기 하러 감
+			if (p == null)
 				continue;
 
 			// 이하는 떨어져야 하는 미네랄 있는 경우
 			// p = 떨어져야하는 미네랄클러스터의 한 부분
-			ArrayList<Pos> fallingMinerals = getFallingMineralCluster(p); // 낙하중인 미네랄 클러스터의 좌표들
+			ArrayList<Pos> fallingMinerals = getFallingMineralCluster(p); // 낙하중인 클러스터의 좌표들
 
 			// 미네랄 떨어뜨리기
 			setMineral(fallingMinerals);
@@ -87,14 +91,30 @@ public class boj_18500 {
 	}
 
 	private static void setMineral(ArrayList<Pos> cluster) {
-
-		int mineralCount = cluster.size();
-		for (int i = 0; i < mineralCount; i++) {
-			int ni = cluster.get(i).i + 1;
-			int nj = cluster.get(i).j;
-
+		// 낙하 거리 계산 위해 일단 동굴에서 떨어져야 하는 클러스터 지우기
+		for (Pos p : cluster) {
+			cave[p.i][p.j] = '.';
 		}
 
+		int mineralCount = cluster.size();
+		int fallingHeight = 0;
+		boolean canFalling = true;
+		while(canFalling) {
+			fallingHeight++;
+			for (int i = 0; i < mineralCount; i++) {
+				int ni = cluster.get(i).i + fallingHeight;
+				// 범위 밖이거나(지하로 뚫고 가는 경우), 다른 미네랄에 닿은 경우 더이상 낙하 불가
+				if(!isIn(ni, cluster.get(i).j) || cave[ni][cluster.get(i).j]=='x') {
+					canFalling = false;
+					fallingHeight--;
+					break;
+				}
+			}
+		}
+		// 낙하 가능한 칸 만큼 낙하시키기
+		for (Pos p : cluster) {
+			cave[p.i+fallingHeight][p.j] = 'x';
+		}
 	}
 
 	private static ArrayList<Pos> getFallingMineralCluster(Pos start) {
