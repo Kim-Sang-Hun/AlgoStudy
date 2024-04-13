@@ -1,5 +1,3 @@
-package april2;
-
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
@@ -11,7 +9,7 @@ import java.util.List;
 import java.util.PriorityQueue;
 import java.util.Queue;
 import java.util.StringTokenizer;
-// 코드트리 두 문제 다 출력까지 나오는 코드가 캠퍼스 컴퓨터에 있어서...이거라도...
+
 /*
  * 포탑의 공격력이 0이하가 되면 더 이상 공격 못함.
  * 최초의 공격력이 0일 수 있음
@@ -54,8 +52,8 @@ import java.util.StringTokenizer;
  * 
  * */
 
-public class 포탑부수기_김주희 {
-	static int N, M, K;
+public class Main {
+	static int N, M, K, time, cnt;
 	static Turrent[][] map;
 	static boolean canGo[][];
 	static PriorityQueue<Turrent> leak = new PriorityQueue<>();
@@ -87,8 +85,11 @@ public class 포탑부수기_김주희 {
 
 		@Override
 		public String toString() {
-			return "Turrent [r=" + r + ", c=" + c + ", power=" + power + ", currentAttackT=" + currentAttackT + "]";
+			return "Turrent [r=" + r + ", c=" + c + ", power=" + power + ", currentAttackT=" + currentAttackT
+					+ ", dead=" + dead + "]";
 		}
+
+		
 		
 	}
 	
@@ -155,29 +156,93 @@ public class 포탑부수기_김주희 {
 		
 	}
 	
-	private static void Attack() {
+	private static void attack() {
+
 		Turrent attacker = leak.poll();
 		attacker.power += N+M;
+		attacker.currentAttackT = time;
 		
-		Turrent strong = leak.poll();
+
+		Turrent victim = strong.poll();
 		
-		List<int[]> r = bfs(attacker, strong);
+		List<int[]> r = bfs(attacker, victim);
 		
-		if(r.size() == 0) { // 포탄공격
-			
+//		System.out.println(r);
+		
+		if(r.size() <= 1) { // 포탄공격
+			shell(attacker, victim);
 		}else { // 레이저공격
-			Laser(r);
+			laser(r);
 		}
+		
+//		leak.add(attacker);
+//		strong.add(victim);
+		
 	}
 	
-	private static void Laser(List<int[]> routes) {
+	private static void shell(Turrent attacker, Turrent victim) {
+		int attackPower = attacker.power;
+		
+		victim.power -= attackPower;
+		victim.currentAttackT = time;
+		for (int i = 0; i < 8; i++) {
+			int nr = next(victim.r, dr[i], true);
+			int nc = next(victim.c, dc[i], false);
+			
+			if(!canGo[nr][nc]) continue;
+			
+//			System.out.println("==========");
+//			System.out.println(nr);
+//			System.out.println(nc);
+//			System.out.println("==========");
+			
+			map[nr][nc].power -= attackPower/2;
+			map[nr][nc].currentAttackT = time;
+		}
+	}
+
+	private static void laser(List<int[]> routes) {
 		
 		int attackPower = map[routes.get(0)[0]][routes.get(0)[1]].power;
 		
 		for (int i = 1; i < routes.size()-1; i++) {
 			map[routes.get(i)[0]][routes.get(i)[1]].power -= attackPower/2;
+			map[routes.get(i)[0]][routes.get(i)[1]].currentAttackT = time;
 		}
 		map[routes.get(routes.size()-1)[0]][routes.get(routes.size()-1)[1]].power -= attackPower;
+		map[routes.get(routes.size()-1)[0]][routes.get(routes.size()-1)[1]].currentAttackT = time;
+	}
+	
+	private static void breakT() {
+		for (int i = 1; i <= N; i++) {
+			for (int j = 1; j <= M; j++) {
+				if(!canGo[i][j]) continue;
+				
+				if(map[i][j].power <= 0) {
+					canGo[i][j] = false;
+					map[i][j].dead = true;
+					cnt--;
+				}
+				
+			}
+		}
+	}
+	
+	private static void repair() {
+		leak.clear();
+		strong.clear();
+		
+		for (int i = 1; i <= N; i++) {
+			for (int j = 1; j <= M; j++) {
+				if(!canGo[i][j]) continue;
+				
+				if(map[i][j].currentAttackT != time)
+					map[i][j].power++;
+				
+				leak.add(map[i][j]);
+				strong.add(map[i][j]);
+			}
+		}
 	}
 
 	public static void main(String[] args) throws Exception {
@@ -197,6 +262,7 @@ public class 포탑부수기_김주희 {
 				int power = Integer.parseInt(st.nextToken());
 				
 				if(power > 0) {
+					cnt++;
 					canGo[i][j] = true;
 					map[i][j] = new Turrent(i,j,power);
 					leak.add(map[i][j]);
@@ -212,16 +278,40 @@ public class 포탑부수기_김주희 {
 //			}
 //			System.out.println();
 //		}
+//		
+//		System.out.println(next(1,-1,true));
+//		System.out.println(next(2,1,false));
 		
-		Attack();
-		
-		for (int i = 1; i <= N; i++) {
-			for (int j = 1; j <= M; j++) {
-				if(map[i][j] == null) continue;
-				
-				System.out.println(map[i][j]);
-			}
+		while(time < K) {
+			if(cnt <= 1) break;
+			time++;
+			
+			attack();
+			breakT();
+			repair();
+			
+//			for (int i = 1; i <= N; i++) {
+//				for (int j = 1; j <= M; j++) {
+//					if(map[i][j] == null) continue;
+//					
+//					System.out.println(map[i][j]);
+//				}
+//			}
+//			System.out.println();
+			
+			
+			
 		}
+		
+		System.out.println(strong.poll().power);
+		
+//		for (int i = 1; i <= N; i++) {
+//			for (int j = 1; j <= M; j++) {
+//				if(map[i][j] == null) continue;
+//				
+//				System.out.println(map[i][j]);
+//			}
+//		}
 		
 		
 		
