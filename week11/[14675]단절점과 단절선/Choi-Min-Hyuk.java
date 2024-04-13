@@ -41,7 +41,7 @@ public class BOJ14675_단절점과단절선_최민혁 {
 				sb.append("yes").append(lineSeparator);
 			}
 		}
-		
+
 		System.out.print(sb);
 	}
 }
