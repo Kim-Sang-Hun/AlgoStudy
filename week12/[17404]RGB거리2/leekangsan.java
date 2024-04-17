@@ -3,8 +3,6 @@ package BOJ;
 import java.io.*;
 import java.util.*;
 
-import javax.print.attribute.standard.OutputDeviceAssigned;
-
 /*
 * 제목
 * <RGB거리 2> G4
