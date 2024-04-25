@@ -3,6 +3,11 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
+/*
+브루트 포스.
+전체 맵을 돌면서 가능한 값을 모두 계산해본다.
+등차를 진행하며 중간에도 계속 값을 계산해줘야 한다 << 이것 때문에 시간이 오래 걸렸다.
+*/
 public class JUN1025_제곱수찾기 {
 
    static int N, M;
