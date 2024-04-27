@@ -35,6 +35,7 @@
 |**11주차**<br> (04.08 ~ 04.13)|[코드트리 빵](https://www.codetree.ai/training-field/frequent-problems/problems/codetree-mon-bread/description?page=1&pageSize=20)|[포탑 부수기](https://www.codetree.ai/training-field/frequent-problems/problems/destroy-the-turret/description?page=1&pageSize=20)|[순열장난](https://www.acmicpc.net/problem/10597)|[단절점과 단절선](https://www.acmicpc.net/problem/14675)|[두 배열의 합](https://www.acmicpc.net/problem/2143)|
 |**12주차**<br> (04.15 ~ 04.19)|[피리 부는 사나이](https://www.acmicpc.net/problem/16724)|[RGB거리 2](https://www.acmicpc.net/problem/17404)|[개똥벌레](https://www.acmicpc.net/problem/3020)|[해킹](https://www.acmicpc.net/problem/10282)|[작업](https://www.acmicpc.net/problem/2056)|
 |**13주차**<br> (04.22 ~ 04.27)|[제곱수 찾기](https://www.acmicpc.net/problem/1025)|[암벽 등반](https://www.acmicpc.net/problem/2412)|[등수 찾기](https://www.acmicpc.net/problem/17616)|[로마 숫자 만들기](https://www.acmicpc.net/problem/16922)|[수 고르기](https://www.acmicpc.net/problem/2230)|
+|**14주차**<br> (04.29 ~ 05.04)|[여행 가자](https://www.acmicpc.net/problem/1976)|[텀 프로젝트](https://www.acmicpc.net/problem/9466)|[파티](https://www.acmicpc.net/problem/1238)|[부분수열의 합 2](https://www.acmicpc.net/problem/1208)|[단속카메라](https://school.programmers.co.kr/learn/courses/30/lessons/42884)|
 </details>
 <br/><br/>
 
