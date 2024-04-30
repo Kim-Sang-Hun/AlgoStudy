@@ -22,7 +22,7 @@ public class boj_9466 {
 	static int n; // 학생 수
 	static int[] favorite; // 같이 팀 하고 싶은 사람 저장
 	static boolean[] visit; // 방문 여부
-	static Stack<Integer> stack = new Stack<>();
+	static Stack<Integer> path = new Stack<>();
 	
 	static int cnt;
 
@@ -62,12 +62,12 @@ public class boj_9466 {
 		// 더이상 진행 못하면 종료
 		if(visit[next]) {
 			// next(==start)가 path 안에 있으면 next 나올 때까지 cnt--
-			if(stack.contains(next)) {
-				while(stack.peek() != next) {
-					stack.pop();
+			if(path.contains(next)) {
+				while(path.peek() != next) {
+					path.pop();
 					cnt--;
 				}
-				stack.pop();
+				path.pop();
 				cnt--;
 			}
  			return; 
