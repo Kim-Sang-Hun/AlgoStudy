@@ -44,9 +44,9 @@ public class boj_9466 {
 			for (int i = 1; i <= n; i++) {
 				if(visit[i])
 					continue;
-				stack.removeAllElements();
+				path.removeAllElements();
 				visit[i] = true;
-				stack.add(i);
+				path.add(i);
 				dfs(i, i, 0);
 			}
 
@@ -73,7 +73,7 @@ public class boj_9466 {
  			return; 
 		} else {
 			visit[next] = true;
-			stack.add(next);
+			path.add(next);
 			dfs(start, next, depth+1);
 		}
 	}
