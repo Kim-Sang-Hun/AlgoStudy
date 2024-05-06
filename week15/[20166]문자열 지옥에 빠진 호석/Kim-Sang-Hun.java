@@ -17,6 +17,7 @@ import java.util.StringTokenizer;
 다만 차이가 둘 다 0이면 같은 지점이므로 패스한다.
 
 문자열의 끝까지 통과한다면 cnt를 늘려준다.
+메모리 : 19448kb, 시간 : 256ms
  */
 public class JUN20166_문자열지옥에빠진호석 {
 
