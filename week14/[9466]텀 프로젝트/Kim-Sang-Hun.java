@@ -3,10 +3,10 @@ import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
 /*
-circle이 존재하는지 확인한다
+cycle이 존재하는지 확인한다
 첫 바퀴때는 방문처리하고
-두 바퀴때는 circle이 존재하는 것들을 made처리한다
-(시작해서 circle은 발생했지만 시작점에 돌아오지 않는 경우 방지)
+두 바퀴때는 cycle이 존재하는 것들을 made처리한다
+(시작해서 cycle은 발생했지만 시작점에 돌아오지 않는 경우 방지)
 
  */
 public class JUN9466_텀프로젝트 {
