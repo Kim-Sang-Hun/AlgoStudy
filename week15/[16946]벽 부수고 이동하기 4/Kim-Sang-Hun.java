@@ -10,6 +10,13 @@ import java.util.Queue;
 import java.util.Set;
 import java.util.StringTokenizer;
 
+/*
+1000*1000이라서 1이 나올 때마다 bfs를 돌리면 시초가 날 것 같았다.
+그래서 먼저 이어진 0들을 특정 번호로 매핑해두고 map에 이어진 0들의 개수를 저장해두었다.
+이후 맵을 돌면서 1이 나오면 사방탐색해서 매핑된 값들을 더해주었다.
+Set을 활용해 중복된 번호를 더하는 것을 막았다.
+메모리 240000kb, 시간 1580ms
+ */
 public class JUN16946_벽부수고이동하기4 {
 
    static int n, m, union;
