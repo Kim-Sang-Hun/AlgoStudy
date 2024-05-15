@@ -77,7 +77,7 @@ public class boj_3584 {
 			curA = A;
 			curB = B;
 			
-			// 더 깊이 있는 노드에서 깊이차이 만큼 커서 이동
+			// 더 깊은 곳에 있는 노드에서 깊이 차이 만큼 커서 이동
 			if (depth[A] > depth[B]) {
 				int diff = depth[A] - depth[B];
 				for (int k = 0; k < diff; k++) {
