@@ -56,7 +56,7 @@
 ## 👶참여자   
 [김상훈](https://github.com/Kim-Sang-Hun) <br/>
 고동현 <br/>
-김상현 <br/>
+[김상현](https://github.com/isayaksh) <br/>
 김주희 <br/>
 김재윤 <br/>
 신은진 <br/>
