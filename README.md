@@ -61,7 +61,7 @@
 김재윤 <br/>
 신은진 <br/>
 이강산 <br/>
-최민혁 <br/><br/>
+[최민혁](https://github.com/Marvin-Choi) <br/><br/>
 
 [스터디 노션](https://www.notion.so/a68123ff76534c5c9915dd62d7cdc0f4#479187049c3d4a20a5f243b3cd1a6dc1)
 
