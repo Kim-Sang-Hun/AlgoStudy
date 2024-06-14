@@ -45,6 +45,13 @@
 |**15주차**<br> (05.04 ~ 05.11)|[포도주 시식](https://www.acmicpc.net/problem/2156)|[벽 부수고 이동하기 4](https://www.acmicpc.net/problem/16946)|[문자열 지옥에 빠진 호석](https://www.acmicpc.net/problem/20166)|[피보나치 수 6](https://www.acmicpc.net/problem/11444)|[영우는 사기꾼?](https://www.acmicpc.net/problem/14676)|
 |**16주차**<br> (05.11 ~ 05.18)|[가장 가까운 공통 조상](https://www.acmicpc.net/problem/3584)|[개근상](https://www.acmicpc.net/problem/1563)|[표 병합](https://school.programmers.co.kr/learn/courses/30/lessons/150366)|[골목 대장 호석 - 기능성](https://www.acmicpc.net/problem/20168)|[귀여운 라이언](https://www.acmicpc.net/problem/15565)|
 </details>
+
+<details open><summary>📎6월 문제집</summary>
+ 
+|문제|1|2|3|
+|:---:|:---:|:---:|:---:|
+|**17주차**<br> (06.16 ~ 06.22)|[종이 조각](https://www.acmicpc.net/problem/14391)|[회장뽑기](https://www.acmicpc.net/problem/2660)|[미로 탈출](https://www.acmicpc.net/problem/14923)|
+</details>
 <br/><br/>
 
 ## 📋목표
