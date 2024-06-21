@@ -63,12 +63,12 @@
 ## 👶참여자   
 [김상훈](https://github.com/Kim-Sang-Hun) <br/>
 고동현 <br/>
-[김상현](https://github.com/isayaksh) <br/>
-김주희 <br/>
+[김상현](https://github.com/isayaksh) 싸탈ㅊㅋ <br/> 
+김주희 싸탈ㅊㅋ <br/> 
 김재윤 <br/>
-신은진 <br/>
+신은진 싸탈ㅊㅋ <br/> 
 이강산 <br/>
-[최민혁](https://github.com/Marvin-Choi) <br/><br/>
+[최민혁](https://github.com/Marvin-Choi) 싸탈ㅊㅋ <br/><br/> 
 
 [스터디 노션](https://www.notion.so/a68123ff76534c5c9915dd62d7cdc0f4#479187049c3d4a20a5f243b3cd1a6dc1)
 
