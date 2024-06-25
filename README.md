@@ -38,7 +38,7 @@
 |**14주차**<br> (04.29 ~ 05.04)|[여행 가자](https://www.acmicpc.net/problem/1976)|[텀 프로젝트](https://www.acmicpc.net/problem/9466)|[파티](https://www.acmicpc.net/problem/1238)|[부분수열의 합 2](https://www.acmicpc.net/problem/1208)|[단속카메라](https://school.programmers.co.kr/learn/courses/30/lessons/42884)|
 </details>
 
-<details open><summary>📎5월 문제집</summary>
+<details><summary>📎5월 문제집</summary>
  
 |문제|1|2|3|4|5|
 |:---:|:---:|:---:|:---:|:---:|:---:|
@@ -51,7 +51,7 @@
 |문제|1|2|3|
 |:---:|:---:|:---:|:---:|
 |**17주차**<br> (06.16 ~ 06.22)|[종이 조각](https://www.acmicpc.net/problem/14391)|[회장뽑기](https://www.acmicpc.net/problem/2660)|[미로 탈출](https://www.acmicpc.net/problem/14923)|
-|**18주차**<br> (06.23 ~ 06.29)[풍선 터트리기](https://school.programmers.co.kr/learn/courses/30/lessons/68646?language=java)|[호텔 대실](https://school.programmers.co.kr/learn/courses/30/lessons/155651)|[인사 고과](https://school.programmers.co.kr/learn/courses/30/lessons/152995)
+|**18주차**<br> (06.23 ~ 06.29)|[풍선 터트리기](https://school.programmers.co.kr/learn/courses/30/lessons/68646?language=java)|[호텔 대실](https://school.programmers.co.kr/learn/courses/30/lessons/155651)|[인사 고과](https://school.programmers.co.kr/learn/courses/30/lessons/152995)
 </details>
 <br/><br/>
 
