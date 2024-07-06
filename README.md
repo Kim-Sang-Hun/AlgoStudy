@@ -46,7 +46,7 @@
 |**16주차**<br> (05.11 ~ 05.18)|[가장 가까운 공통 조상](https://www.acmicpc.net/problem/3584)|[개근상](https://www.acmicpc.net/problem/1563)|[표 병합](https://school.programmers.co.kr/learn/courses/30/lessons/150366)|[골목 대장 호석 - 기능성](https://www.acmicpc.net/problem/20168)|[귀여운 라이언](https://www.acmicpc.net/problem/15565)|
 </details>
 
-<details open><summary>📎6월 문제집</summary>
+<details><summary>📎6월 문제집</summary>
  
 |문제|1|2|3|
 |:---:|:---:|:---:|:---:|
