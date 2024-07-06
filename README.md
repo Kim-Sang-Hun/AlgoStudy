@@ -52,7 +52,8 @@
 |:---:|:---:|:---:|:---:|
 |**17주차**<br> (06.16 ~ 06.22)|[종이 조각](https://www.acmicpc.net/problem/14391)|[회장뽑기](https://www.acmicpc.net/problem/2660)|[미로 탈출](https://www.acmicpc.net/problem/14923)|
 |**18주차**<br> (06.23 ~ 06.29)|[풍선 터트리기](https://school.programmers.co.kr/learn/courses/30/lessons/68646?language=java)|[호텔 대실](https://school.programmers.co.kr/learn/courses/30/lessons/155651)|[인사 고과](https://school.programmers.co.kr/learn/courses/30/lessons/152995)
-|**19주차**<br> (07.01 ~ 07.06)|[내려가기](https://www.acmicpc.net/problem/2096)|[별찍기-11](https://www.acmicpc.net/problem/2448)|[트리의 부모 찾기](https://www.acmicpc.net/problem/11725)|
+|**19주차**<br> (06.30 ~ 07.06)|[내려가기](https://www.acmicpc.net/problem/2096)|[별찍기-11](https://www.acmicpc.net/problem/2448)|[트리의 부모 찾기](https://www.acmicpc.net/problem/11725)|
+|**20주차**<br> (07.07 ~ 07.13)|[행렬제곱](https://www.acmicpc.net/problem/10830)|[이중 우선순위 큐](https://www.acmicpc.net/problem/7662)|[아기 상어](https://www.acmicpc.net/problem/16236)|
 </details>
 <br/><br/>
 
