@@ -62,7 +62,7 @@
 |**20주차**<br> (07.07 ~ 07.13)|[행렬제곱](https://www.acmicpc.net/problem/10830)|[이중 우선순위 큐](https://www.acmicpc.net/problem/7662)|[아기 상어](https://www.acmicpc.net/problem/16236)|
 |**21주차**<br> (07.14 ~ 07.20)|[고속도로](https://www.acmicpc.net/problem/10254)|||
 
-https://www.acmicpc.net/problem/10254
+
 </details>
 <br/><br/>
 
