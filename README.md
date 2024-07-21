@@ -61,6 +61,7 @@
 |**19주차**<br> (06.30 ~ 07.06)|[내려가기](https://www.acmicpc.net/problem/2096)|[별찍기-11](https://www.acmicpc.net/problem/2448)|[트리의 부모 찾기](https://www.acmicpc.net/problem/11725)|
 |**20주차**<br> (07.07 ~ 07.13)|[행렬제곱](https://www.acmicpc.net/problem/10830)|[이중 우선순위 큐](https://www.acmicpc.net/problem/7662)|[아기 상어](https://www.acmicpc.net/problem/16236)|
 |**21주차**<br> (07.14 ~ 07.20)|[A -> B](https://www.acmicpc.net/problem/16953)|[N과 M (12)](https://www.acmicpc.net/problem/15666)|[용액](https://www.acmicpc.net/problem/2467)|
+|**22주차**<br> (07.21 ~ 07.27)|[마법사 상어와 파이어스톰](https://www.acmicpc.net/problem/20058)|[과제](https://www.acmicpc.net/problem/13904)|[휴게소 세우기](https://www.acmicpc.net/problem/1477)|
 
 
 </details>
